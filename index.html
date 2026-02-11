@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários Inteligentes</title>
+    <link rel="stylesheet" href="styles/index.css">
+</head>
+<body>
+    <h1>Atividade 2: Formulários inteligentes</h1>
+    <h2>Formulário: inscrição</h2>
+    <form id="form-inscricao">
+        <label>Nome :</label>
+        <input type="text" id="nome">
+        <br>
+        <label>Idade :</label>
+        <input type="number" id="idade">
+        <br>
+        <label>Nível de Experiência (1 a 10):</label>
+        <input type="number" id="nivel">
+        <br>
+        <button type="button" onclick="validar()">Enviar</button>
+    </form>
+    <p id="mensagem"></p>
+    <hr>
+
+    <h2>Desafio 1: Validador de senha</h2>
+    <form id="desafio1">
+        <label>Senha :</label>
+        <input type="password" id="senha0">
+        <br>
+        <label>Confirmar senha:</label>
+        <input type="password" id="senha1">
+        <br>
+        <button type="button" onclick="validarDesafio1()">Validar desafio 1</button>
+        <br>
+    </form> 
+    <p id="mensagem1"></p>
+    <hr>
+
+    <h2>Desafio 2: Promoção especial</h2>
+    <form id="desafio2">
+        <label>Idade :</label>
+        <input type="number" id="idade2">
+        <br>
+        <label>Você é estudante ?</label>
+        <input type="checkbox" id="estudante">
+        <br>
+        <button type="button" onclick="validarDesafio2()">Validar desafio 2</button>
+        <br>
+    </form>
+    <p id="mensagem2"></p>
+    <hr>
+
+    <h2>Desafio 3: O "Bouncer" do sistema</h2>
+    <form id="desafio3">
+        <label>Nome :</label>
+        <input type="text" id="nome3">
+        <br>
+        <label>Idade :</label>
+        <input type="number" id="idade3">
+        <br>
+        <button type="button" onclick="validarDesafio3()">Validar desafio 3</button>
+        <br>
+    </form>
+    <p id="mensagem3"></p>
+    <hr>
+
+<script src="scripts/index.js"></script>
+</body>
+</html>

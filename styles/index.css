@@ -1,0 +1,98 @@
+:root {
+    --bg-color: rgb(157, 191, 211);
+    --primary-blue: rgb(0, 10, 71);
+    --accent-blue: rgb(0, 120, 141);
+    --card-white: rgba(255, 255, 255, 0.4); 
+}
+
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 18px; 
+    background-color: var(--bg-color);
+    color: #000328;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+h2 {
+    text-align: center;
+    margin-top: 30px;
+    letter-spacing: 1px;
+}
+
+form {
+    background-color: var(--card-white);
+    padding: 25px;
+    border-radius: 12px;
+    width: 100%;
+    max-width: 400px; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 15px;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="password"] {
+    width: calc(100% - 20px); 
+    padding: 10px;
+    margin: 10px 0 20px 0;
+    border: 1px solid var(--primary-blue);
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+input[type="checkbox"] {
+    accent-color: var(--accent-blue);
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+    margin-left: 10px;
+}
+
+button {
+    color: whitesmoke;
+    background-color: var(--primary-blue);
+    font-size: 18px;
+    font-weight: bold;
+    font-family: 'Segoe UI', sans-serif;
+    border: none;
+    border-radius: 8px;
+    padding: 12px 20px;
+    width: 100%; 
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background-color: var(--accent-blue);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+button:active {
+    transform: translateY(0);
+}
+
+p {
+    font-weight: 700;
+    color: var(--primary-blue);
+    text-align: center;
+    height: 24px;
+}
+
+hr {
+    border: none;
+    height: 2px;
+    background-color: var(--primary-blue);
+    width: 100%;
+    margin: 40px 0;
+    opacity: 0.3;
+}
